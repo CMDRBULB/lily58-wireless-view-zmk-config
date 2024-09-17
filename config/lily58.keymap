@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -52,11 +53,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans         &trans        &trans                &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8         &kp F9        &kp F10               &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans         &trans        &kp LEFT_BRACE        &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans         &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans          &trans          &trans            &trans  &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                             &trans     &msc SCROLL_UP  &mmv MOVE_UP    &msc SCROLL_DOWN  &trans  &trans
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                          &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans     &trans     &trans          &mkp MB3        &trans            &trans  &trans
+                                        &trans        &trans        &trans        &trans    &mkp LCLK  &mkp RCLK  &trans          &trans
             >;
         };
 
