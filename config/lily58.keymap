@@ -4,14 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-
-
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
 &mmv {
@@ -25,7 +23,6 @@
     time-to-max-speed-ms = <40>;      // 300
     delay-ms = <0>;                   // 0
 };
-
 
 / {
     behaviors {
@@ -52,11 +49,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                         &kp N6   &kp N7  &kp N8         &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                                          &kp Y    &kp U   &kp I          &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                                          &kp H    &kp J   &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT                                    &kp RBKT   &kp N    &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &backspace_hold_tap LEFT_SHIFT BACKSPACE    &kp SPACE  &kp RET  &mo 2   &kp RIGHT_ALT
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                                                       &kp N6   &kp N7  &kp N8         &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                                                                        &kp Y    &kp U   &kp I          &kp O    &kp P     &kp MINUS
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                                                                        &kp H    &kp J   &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT                                    &kp RBKT                                 &kp N    &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LALT  &kp LGUI  &mo 1   &backspace_hold_tap LEFT_SHIFT BACKSPACE    &backspace_hold_tap RIGHT_CONTROL SPACE  &kp RET  &mo 2   &kp RIGHT_ALT
             >;
         };
 
@@ -70,10 +67,10 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans          &trans          &trans            &trans  &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                             &trans     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN    &trans  &trans
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                          &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans     &trans     &mkp MB4        &mkp MCLK        &mkp MB5         &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans          &trans          &trans           &trans  &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                             &trans     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                          &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans     &trans     &mkp MB4        &mkp MCLK       &mkp MB5         &trans  &trans
                                         &trans        &trans        &trans        &trans    &mkp LCLK  &mkp RCLK  &trans          &trans
             >;
         };
