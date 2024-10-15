@@ -77,10 +77,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp F1  &kp F2  &kp F3       &kp F4                &kp F5                 &kp F6                           &kp F7           &kp F8            &kp F9             &kp F10          &kp F11  &kp F12
-&trans  &trans  &kp PAGE_UP  &kp UP_ARROW          &kp PAGE_DOWN          &trans                           &kp C_VOLUME_UP  &msc SCRL_UP      &mmv MOVE_UP       &msc SCRL_DOWN   &trans   &trans
-&trans  &trans  &kp LEFT     &kp DOWN_ARROW        &kp RIGHT              &trans                           &kp C_MUTE       &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &trans   &trans
-&trans  &trans  &kp C_PREV   &kp C_PLAY            &kp C_NEXT             &kp C_STOP  &trans    &trans     &kp C_VOL_DN     &mkp MB4          &mkp MCLK          &mkp MB5         &trans   &trans
+&kp F1  &kp F2  &kp F3       &kp F4                &kp F5                 &kp F6                           &kp F7           &kp F8            &kp F9             &kp F10          &kp F11               &kp F12
+&trans  &trans  &kp PAGE_UP  &kp UP_ARROW          &kp PAGE_DOWN          &trans                           &kp C_VOLUME_UP  &msc SCRL_UP      &mmv MOVE_UP       &msc SCRL_DOWN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans  &kp LEFT     &kp DOWN_ARROW        &kp RIGHT              &trans                           &kp C_MUTE       &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans  &trans  &kp C_PREV   &kp C_PLAY            &kp C_NEXT             &kp C_STOP  &trans    &trans     &kp C_VOL_DN     &mkp MB4          &mkp MCLK          &mkp MB5         &kp LEFT_BRACE        &kp RIGHT_BRACE
                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans    &mkp LCLK  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
         };
