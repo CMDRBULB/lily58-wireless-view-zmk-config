@@ -59,10 +59,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                                                       &kp N6                               &kp N7     &kp N8     &kp N9   &kp N0            &kp DELETE
-&kp TAB           &kp Q   &kp W   &kp E     &kp R   &kp T                                                                                        &kp Y                                &kp U      &kp I      &kp O    &kp P             &kp GRAVE
-&kp LEFT_WIN      &kp A   &kp S   &kp D     &kp F   &kp G                                                                                        &kp H                                &kp J      &kp K      &kp L    &kp SEMI          &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V   &kp B   &kp HOME                                    &kp END                                  &kp N                                &kp M      &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp SLASH
+&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                                                       &kp N6                               &kp N7     &kp N8     &kp N9   &kp N0     &kp DELETE
+&kp TAB           &kp Q   &kp W   &kp E     &kp R   &kp T                                                                                        &kp Y                                &kp U      &kp I      &kp O    &kp P      &kp GRAVE
+&kp LEFT_WIN      &kp A   &kp S   &kp D     &kp F   &kp G                                                                                        &kp H                                &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V   &kp B   &kp HOME                                    &kp END                                  &kp N                                &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
                                   &kp LALT  &mo 2   &mo 1   &backspace_hold_tap LEFT_SHIFT BACKSPACE    &backspace_hold_tap RIGHT_CONTROL SPACE  &backspace_hold_tap RIGHT_ALT ENTER  &kp MINUS  &kp EQUAL
             >;
         };
